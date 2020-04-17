@@ -27,9 +27,15 @@ struct HomeView: View {
             .padding(.top, 30)
             
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 30) {
+                HStack(spacing: 20) {
                     ForEach(sectionData) { item in
-                        SectionView(section: item)
+                        GeometryReader { geometry in
+                            SectionView(section: item)
+                            .rotation3DEffect(Angle(degrees:
+                                Double(geometry.frame(in: .global).minX - 30) / -20
+                                ), axis: (x: 0.0, y: 1.0, z: 0.0))
+                        }
+                        .frame(width: 275, height: 275)
                     }
                 }
                 .padding(30)
@@ -90,5 +96,5 @@ struct Section: Identifiable {
 }
 
 let sectionData = [
-    Section(title: "Day One", text: "18 Exercises", logo: "Logo1", image: Image("Card1"), color: Color("card1")), Section(title: "Day Two", text: "10 Exercises", logo: "Logo1", image: Image("Card2"), color: Color("card2")), Section(title: "Day Three", text: "14 Exercises", logo: "Logo1", image: Image("Card3"), color: Color("card3")), Section(title: "Day Four", text: "10 Exercises", logo: "Logo1", image: Image("Card4"), color: Color("card4")), Section(title: "Day Five", text: "12 Exercises", logo: "Logo1", image: Image("Card5"), color: Color("card5"))
+    Section(title: "Day One", text: "8 Exercises", logo: "Logo1", image: Image("Card1"), color: Color("card1")), Section(title: "Day Two", text: "7 Exercises", logo: "Logo1", image: Image("Card2"), color: Color("card2")), Section(title: "Day Three", text: "10 Exercises", logo: "Logo1", image: Image("Card3"), color: Color("card3")), Section(title: "Day Four", text: "8 Exercises", logo: "Logo1", image: Image("Card4"), color: Color("card4")), Section(title: "Day Five", text: "6 Exercises", logo: "Logo1", image: Image("Card5"), color: Color("card5"))
 ]
