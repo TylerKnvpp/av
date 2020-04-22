@@ -16,8 +16,7 @@ struct HomeView: View {
         VStack {
             
             HStack {
-                Text("Workouts")
-                    .font(.system(size: 28, weight: .bold))
+                Text("Workouts").modifier(CustomFont())
                 
                 Spacer()
                 
@@ -42,20 +41,12 @@ struct HomeView: View {
             .padding(.leading, 14)
             .padding(.top, 30)
             
-            HStack(spacing: 12.0) {
-                RingView(color1: #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1), color2: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), width: 44, height: 44, percent: 45, show: .constant(true))
-                VStack(alignment: .leading, spacing: 4.0) {
-                    Text("6 mins left")
-                        .font(.subheadline)
-                    Text("Watched 10 mins today")
-                        .font(.caption)
-                }
+            ScrollView(.horizontal, showsIndicators: false) {
+                WatchRingsView()
+                    .padding(.horizontal, 30)
+                .padding(.bottom, 30)
             }
-            .padding(8)
-            .background(Color.white)
-            .cornerRadius(20)
-            .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20 )
-            .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1 )
+                
 
             
             ScrollView(.horizontal, showsIndicators: false) {
@@ -130,3 +121,44 @@ struct Section: Identifiable {
 let sectionData = [
     Section(title: "Day One", text: "8 Exercises", logo: "Logo1", image: Image("Card1"), color: Color("card1")), Section(title: "Day Two", text: "7 Exercises", logo: "Logo1", image: Image("Card2"), color: Color("card2")), Section(title: "Day Three", text: "10 Exercises", logo: "Logo1", image: Image("Card3"), color: Color("card3")), Section(title: "Day Four", text: "8 Exercises", logo: "Logo1", image: Image("Card4"), color: Color("card4")), Section(title: "Day Five", text: "6 Exercises", logo: "Logo1", image: Image("Card5"), color: Color("card5"))
 ]
+
+struct WatchRingsView: View {
+    var body: some View {
+        HStack(spacing: 30) {
+            HStack(spacing: 12.0) {
+                RingView(color1: #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1), color2: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), width: 44, height: 44, percent: 85, show: .constant(true))
+                VStack(alignment: .leading, spacing: 4.0) {
+                    Text("6 mins left").bold().modifier(FontModifier(style: .subheadline))
+                    
+                    Text("Watched 10 mins today").modifier(FontModifier(style: .caption))
+                    
+                }
+                .modifier(FontModifier())
+            }
+            .padding(8)
+            .background(Color.white)
+            .cornerRadius(20)
+            .modifier(ShadowModifier())
+            
+            HStack(spacing: 12.0) {
+                RingView(color1: #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1), color2: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), width: 33, height: 33, percent: 23, show: .constant(true))
+                    
+                    .modifier(FontModifier())
+            }
+            .padding(8)
+            .background(Color.white)
+            .cornerRadius(20)
+            .modifier(ShadowModifier())
+            
+            HStack(spacing: 12.0) {
+                RingView(color1: #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1), color2: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), width: 33, height: 33, percent: 45, show: .constant(true))
+                    
+                    .modifier(FontModifier())
+            }
+            .padding(8)
+            .background(Color.white)
+            .cornerRadius(20)
+            .modifier(ShadowModifier())
+        }
+    }
+}
