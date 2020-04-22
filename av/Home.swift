@@ -8,11 +8,13 @@
 
 import SwiftUI
 
+
 struct Home: View {
     @State var showProfile = false
     @State var viewState = CGSize.zero
     
     var body: some View {
+        
         ZStack {
             Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
                 .edgesIgnoringSafeArea(.all)
