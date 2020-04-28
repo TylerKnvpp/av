@@ -47,6 +47,7 @@
 		2F8F0E3E244789B8000A433C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F0E3D244789B8000A433C /* Home.swift */; };
 		2F8F0E402447937C000A433C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F0E3F2447937C000A433C /* HomeView.swift */; };
 		2FE8BFCB2457AE76005B66B9 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8BFCA2457AE76005B66B9 /* CourseList.swift */; };
+		2FE8BFCF24588594005B66B9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8BFCE24588594005B66B9 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		2F8F0E3D244789B8000A433C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		2F8F0E3F2447937C000A433C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2FE8BFCA2457AE76005B66B9 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		2FE8BFCE24588594005B66B9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				2F8F0E0F24460A36000A433C /* ContentView.swift */,
 				2F42E0542450AF1900A7EAB0 /* RingView.swift */,
 				2F8F0E3D244789B8000A433C /* Home.swift */,
+				2FE8BFCE24588594005B66B9 /* Card.swift */,
 				2F8F0E3F2447937C000A433C /* HomeView.swift */,
 				2FE8BFCA2457AE76005B66B9 /* CourseList.swift */,
 				2F42E0562450C1F500A7EAB0 /* Modifiers.swift */,
@@ -410,6 +413,7 @@
 				2F42E0552450AF1A00A7EAB0 /* RingView.swift in Sources */,
 				2F8F0E402447937C000A433C /* HomeView.swift in Sources */,
 				2F42E04F244E67D900A7EAB0 /* DetailsView.swift in Sources */,
+				2FE8BFCF24588594005B66B9 /* Card.swift in Sources */,
 				2F8F0E0E24460A36000A433C /* SceneDelegate.swift in Sources */,
 				2F8F0E1024460A36000A433C /* ContentView.swift in Sources */,
 				2F42E053244E795300A7EAB0 /* TabBar.swift in Sources */,
