@@ -46,6 +46,7 @@
 		2F8F0E3C24477B7D000A433C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F0E3B24477B7D000A433C /* MenuView.swift */; };
 		2F8F0E3E244789B8000A433C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F0E3D244789B8000A433C /* Home.swift */; };
 		2F8F0E402447937C000A433C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F0E3F2447937C000A433C /* HomeView.swift */; };
+		2FE8BFCB2457AE76005B66B9 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8BFCA2457AE76005B66B9 /* CourseList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		2F8F0E3B24477B7D000A433C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		2F8F0E3D244789B8000A433C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		2F8F0E3F2447937C000A433C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2FE8BFCA2457AE76005B66B9 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				2F42E0542450AF1900A7EAB0 /* RingView.swift */,
 				2F8F0E3D244789B8000A433C /* Home.swift */,
 				2F8F0E3F2447937C000A433C /* HomeView.swift */,
+				2FE8BFCA2457AE76005B66B9 /* CourseList.swift */,
 				2F42E0562450C1F500A7EAB0 /* Modifiers.swift */,
 				2F8F0E3B24477B7D000A433C /* MenuView.swift */,
 				2F42E04C244E620B00A7EAB0 /* UpdateList.swift */,
@@ -410,6 +413,7 @@
 				2F8F0E0E24460A36000A433C /* SceneDelegate.swift in Sources */,
 				2F8F0E1024460A36000A433C /* ContentView.swift in Sources */,
 				2F42E053244E795300A7EAB0 /* TabBar.swift in Sources */,
+				2FE8BFCB2457AE76005B66B9 /* CourseList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
